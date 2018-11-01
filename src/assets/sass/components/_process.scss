@@ -1,0 +1,33 @@
+.process {
+  position: fixed;
+  top: 130px;
+  right: 0;
+
+  width: 30px;
+  height: 120px;
+
+  @media (max-width: 1130px) {
+    display: none;
+  }
+}
+
+.process__block {
+  width: 30px;
+  height: 30px;
+}
+
+.process__block--cyan {
+  background-color: $cyan;
+}
+
+.process__block--magenta {
+  background-color: $magenta;
+}
+
+.process__block--yellow {
+  background-color: $yellow;
+}
+
+.process__block--black {
+  background-color: $black;
+}

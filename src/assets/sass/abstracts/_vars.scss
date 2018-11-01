@@ -1,0 +1,66 @@
+//
+// All global variables for SASS
+//
+
+
+// =============================================================================
+// Colors
+// =============================================================================
+
+// Primary + Variants
+$primary: rgb(223, 9, 35) !default;
+$primary-tint: rgb(236, 111, 107) !default;
+$primary-shade: rgb(236, 4, 12) !default;
+
+// Accent
+$accent: rgb(255, 0, 0) !default;
+
+// Background
+$background: rgb(255, 255, 255) !default;
+
+// Surface
+$surface: rgb(255, 255, 255) !default;
+
+// Text
+$on-background: rgb(21, 21, 21) !default;
+$on-surface: rgb(21, 21, 21) !default;
+$on-primary: rgb(255, 255, 255) !default;
+$on-accent: rgb(255, 255, 255) !default;
+
+// Grayscale + White + Black
+$white: rgb(255, 255, 255) !default;
+$lite-gray: rgb(237, 237, 237) !default;
+$med-gray: rgb(153, 153, 153) !default;
+$dark-gray: rgb(68, 68, 68) !default;
+$black: rgb(21, 21, 21) !default;
+
+// CMY
+$cyan: rgb(0, 255, 255) !default;
+$magenta: rgb(255, 0, 255) !default;
+$yellow: rgb(255, 255, 0) !default;
+
+
+// =============================================================================
+// Typography
+// =============================================================================
+
+// Font Weights
+$xbold: 700 !default;
+$bold: 600 !default;
+$regular: 400 !default;
+$lite: 300 !default;
+$xlite: 200 !default;
+
+// Font Stacks
+$font-stack-text: ('HelveticaNeue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif);
+
+
+// =============================================================================
+// Else
+// =============================================================================
+
+// Maximum width for container
+$max-width: 960px !default;
+
+// Transitions
+$transition-default: all 100ms linear !default;

@@ -1,0 +1,122 @@
+/***
+ *
+ * Base Styles
+ *
+ * Standard styles for commonly used elements to simplify and beautify.
+ *
+ **/  
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+/***
+ * 1. Set default markers for list items.
+ * 2. Position the markers inside of the principle block instead of outside of
+ *    it.
+ **/
+
+ul {
+  list-style-type: circle; /* 1 */
+  list-style-position: inside; /* 2 */
+}
+
+ol {
+  list-style-type: decimal; /* 1 */
+  list-style-position: inside; /* 2 */
+}
+
+ol,
+ul {
+  margin-top: 0; 
+  padding-left: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  
+  font-size: 90%;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/***
+ * Reset the styles when using unordered lists in navigational menus.
+ **/
+
+nav ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+nav ul ul, {
+  margin: 0;
+  font-size: 100%;
+}
+
+nav li {
+  margin-bottom: 0;
+}
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+  
+/***
+ * 1. Remove dotted outline when link is active 
+ *
+ * See: https://css-tricks.com/removing-the-dotted-outline/
+ **/
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: 0; /* 1 */
+  transition: $transition-default;
+
+
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
+}
+
+::selection {
+  background: $accent;
+}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+button,
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+textarea { 
+	min-height: 65px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+label,
+legend {
+	margin-bottom: 0.5rem;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline;
+}
