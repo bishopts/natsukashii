@@ -48,11 +48,11 @@ $yellow: rgb(255, 255, 0) !default;
 $xbold: 700 !default;
 $bold: 600 !default;
 $regular: 400 !default;
-$lite: 300 !default;
-$xlite: 200 !default;
+$lite: 200 !default;
+$xlite: 100 !default;
 
 // Font Stacks
-$font-stack-text: ('HelveticaNeue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif);
+$font-stack-text: ('HelveticaNeue-Light', 'Helvetica Neue Light', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif);
 
 
 // =============================================================================

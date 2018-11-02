@@ -1,0 +1,65 @@
+.p001-page-heading {
+  margin-bottom: 6rem;
+}
+
+.p001-page-heading::after {
+  content: '001';
+  margin-left: 2rem;
+  font-size: 2.4rem;
+  color: $magenta;
+  font-weight: $lite;
+}
+
+.p001-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 43rem) 1fr;
+
+  @media (max-width: 860px) {
+    grid-template-columns: none;
+    grid-template-rows: auto-fit 1fr;
+  }
+}
+
+.p001-body {
+  font-size: 1.4rem;
+
+  @media (max-width: 860px) {
+    max-width: 43rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.p001-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  @media (max-width: 860px) {
+    align-items: flex-start;
+  }
+}
+
+.p001-cover-art {
+  width: 60%;
+  margin-bottom: 2rem;
+
+  @media (max-width: 860px) {
+    width: 50%;
+  }
+}
+
+.p001-tracklist {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: $med-gray;
+  text-align: right;
+
+  @media (max-width: 860px) {
+    text-align: left;
+  }
+}
+
+.p001-tracklist__track {
+  margin: 0;
+}
