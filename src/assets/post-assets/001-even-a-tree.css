@@ -675,7 +675,7 @@ h6 {
 
 .menu__item--active {
   background-color: yellow;
-  color: #151515; }
+  color: white; }
 
 .menu__link {
   padding: 0 10px;
@@ -699,15 +699,6 @@ h6 {
   @media (min-width: 1130px) {
     .header {
       padding: 0 5%; } }
-  @media (max-width: 495px) {
-    .header {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; } }
 
 .header__logo {
   border-top: 20px solid #151515;
@@ -715,9 +706,6 @@ h6 {
   padding-top: 10px;
   font-size: 3rem;
   line-height: 0.8; }
-  @media (max-width: 495px) {
-    .header__logo {
-      margin-bottom: 1rem; } }
 
 .header__logo a:hover {
   color: white; }
@@ -726,3 +714,67 @@ h6 {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+.p-page-heading {
+  margin-bottom: 6rem; }
+
+.p-page-heading::after {
+  content: '001';
+  margin-left: 2rem;
+  font-size: 2.4rem;
+  color: magenta;
+  font-weight: 200; }
+
+.p-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 43rem) 1fr; }
+  @media (max-width: 860px) {
+    .p-grid {
+      grid-template-columns: none;
+      grid-template-rows: auto-fit 1fr; } }
+
+.p-body {
+  font-size: 1.4rem; }
+  @media (max-width: 860px) {
+    .p-body {
+      max-width: 43rem;
+      margin-bottom: 1rem; } }
+
+.p-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  @media (max-width: 860px) {
+    .p-aside {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; } }
+
+.p-cover-art {
+  width: 60%;
+  margin-bottom: 2rem; }
+  @media (max-width: 860px) {
+    .p-cover-art {
+      width: 50%; } }
+
+.p-tracklist {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: gray;
+  text-align: right; }
+  @media (max-width: 860px) {
+    .p-tracklist {
+      text-align: left; } }
+
+.p-tracklist__track {
+  margin: 0; }

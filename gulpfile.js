@@ -3,8 +3,7 @@ const sass 				= require('gulp-sass');
 const prefix 			= require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 
-// Compile SASS files for the base site
-gulp.task('sass', function() {
+function css() {
 	return gulp.src('src/assets/sass/main.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(prefix({
@@ -13,17 +12,30 @@ gulp.task('sass', function() {
 		}))
 		.pipe(gulp.dest('src/assets/css'))
 		.pipe(browserSync.stream());
-});
+};
 
-// Start Browser Sync, watch for changes in SASS, watch for changes in HTML
-gulp.task('serve', gulp.series('sass', function() {
+function cssPosts() {
+	return gulp.src('src/assets/post-assets/sass/*.scss')
+		.pipe(sass().on('error', sass.logError))
+		.pipe(prefix({
+			browsers: ['last 2 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('src/assets/post-assets'))
+		.pipe(browserSync.stream());
+};
+
+
+
+function serve() {
 	browserSync.init({
 		server: "./src"
-	});
+	})
+};
 
-	gulp.watch('src/assets/sass/**').on('change', gulp.series('sass'));
-	gulp.watch('src/*.html').on('change', browserSync.reload);
-	gulp.watch('src/posts/*.html').on('change', browserSync.reload);
-}));
+exports.default = serve;
 
-gulp.task('default', gulp.series('serve'));
+gulp.watch('src/assets/sass/**', { events: 'all' }, css);
+gulp.watch('src/assets/post-assets/sass/*.scss', { events: 'all' }, cssPosts);
+gulp.watch('src/*.html', { events: 'all' }, browserSync.reload);
+gulp.watch('src/posts/*.html', { events: 'all' }, browserSync.reload);

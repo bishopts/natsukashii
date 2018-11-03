@@ -11,6 +11,11 @@
   @media (min-width: 1130px) {
       padding: 0 5%;
   }
+
+  @media (max-width: 495px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header__logo {
@@ -20,6 +25,10 @@
 
   font-size: 3rem;
   line-height: 0.8;
+
+  @media (max-width: 495px) {
+    margin-bottom: 1rem;
+  }
 }
 
 .header__logo a:hover {
