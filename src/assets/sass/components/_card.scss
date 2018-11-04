@@ -1,14 +1,11 @@
+/* Card Image */
+
 .card__image {
   margin-bottom: 1rem;
   width: 100%;
-
-  transition: $transition-default;
 }
 
-.card:hover .card__image {
-  opacity: 0.9;
-  transform: scale(0.95);
-}
+/* Card Body */
 
 .card__body {
   align-items: flex-end;
@@ -16,13 +13,9 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 1rem;
-
-  transition: $transition-default;
 }
 
-.card:hover .card__body {
-  color: $cyan;
-}
+/* Card Title */
 
 .card__title {
   margin-bottom: 0;
@@ -32,6 +25,24 @@
   text-transform: uppercase;
 }
 
+/* Card Icon */
+
 .card__icon {
   margin-left: 5px;
+}
+
+/* Card Hover Effects */
+
+.card__image,
+.card__body {
+  transition: $transition-default;
+}
+
+.card:hover .card__image {
+  opacity: 0.9;
+  transform: scale(0.95);
+}
+
+.card:hover .card__body {
+  color: $cyan;
 }

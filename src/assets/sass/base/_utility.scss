@@ -11,6 +11,7 @@
  *    that receive the `clearfix` class.
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
+ *
  **/
 
 .cf::before,
@@ -24,14 +25,26 @@
 }
 
 /***
- * Container class to squeeze and center blocks
+ * Container
  *
- * 1. For devices small than 400px
+ * 1. Squeeze
+ * 2. Center
+ *
  **/
 
 .container {
-  max-width: $max-width;
+  max-width: $max-width; /* 1 */
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto; /* 2 */
   padding: 0 10px;
 }
+
+/***
+ * Italic
+ *
+ * Simple class to make text italic instead of abusing the <em> tag
+ *
+ **/
+ .italic {
+  font-style: italic;
+ }
