@@ -372,6 +372,15 @@ summary {
  *
  **/
 /* =============================================================================
+   Sections
+   ========================================================================== */
+/***
+ * Add padding at the bottom of every page
+ **/
+body {
+  padding-bottom: 6rem; }
+
+/* =============================================================================
    Lists
    ========================================================================== */
 /***
@@ -439,10 +448,10 @@ a {
     color: inherit; }
 
 ::-moz-selection {
-  background: red; }
+  background: yellow; }
 
 ::selection {
-  background: red; }
+  background: yellow; }
 
 /* =============================================================================
    Forms
@@ -670,6 +679,50 @@ h6 {
 .process__block--black {
   background-color: #151515; }
 
+.post-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 6rem; }
+
+.post-heading__title {
+  font-size: 5rem;
+  margin-bottom: 0; }
+
+.post-heading__number {
+  font-size: 2.4rem;
+  color: magenta;
+  font-weight: 200; }
+
+.album-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.album-info__artwork {
+  margin-bottom: 2rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content; }
+
+.album-info__tracklist {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: gray; }
+
+.album-info__track {
+  margin: 0; }
+
 /* =============================================================================
    Menu
    ========================================================================== */
@@ -748,16 +801,6 @@ h6 {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
-.p-page-heading {
-  margin-bottom: 6rem; }
-
-.p-page-heading::after {
-  content: '001';
-  margin-left: 2rem;
-  font-size: 2.4rem;
-  color: magenta;
-  font-weight: 200; }
-
 .p-grid {
   display: grid;
   grid-template-columns: minmax(0, 43rem) 1fr; }
@@ -773,7 +816,7 @@ h6 {
       max-width: 43rem;
       margin-bottom: 1rem; } }
 
-.p-aside {
+.p-album-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,33 +824,23 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end; }
   @media (max-width: 860px) {
-    .p-aside {
+    .p-album-info {
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start; } }
 
-.p-cover-art {
-  width: 60%;
-  margin-bottom: 2rem; }
+.p-album-info__artwork {
+  width: 60%; }
   @media (max-width: 860px) {
-    .p-cover-art {
+    .p-album-info__artwork {
       width: 50%; } }
 
-.p-tracklist {
-  font-size: 1.3rem;
-  line-height: 1.3;
-  color: gray;
+.p-album-info__tracklist {
   text-align: right; }
   @media (max-width: 860px) {
-    .p-tracklist {
+    .p-album-info__tracklist {
       text-align: left; } }
-
-.p-tracklist__track {
-  margin: 0; }

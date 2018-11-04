@@ -1,0 +1,19 @@
+.album-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.album-info__artwork {
+  margin-bottom: 2rem;
+  width: min-content;
+}
+
+.album-info__tracklist {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: $gray-50;  
+}
+
+.album-info__track {
+  margin: 0;
+}

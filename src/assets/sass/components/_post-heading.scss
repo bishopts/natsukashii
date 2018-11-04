@@ -1,0 +1,17 @@
+.post-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 6rem;
+}
+
+.post-heading__title {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.post-heading__number {
+  font-size: 2.4rem;
+  color: $magenta;
+  font-weight: $lite;
+}

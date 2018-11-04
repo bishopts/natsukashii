@@ -372,6 +372,15 @@ summary {
  *
  **/
 /* =============================================================================
+   Sections
+   ========================================================================== */
+/***
+ * Add padding at the bottom of every page
+ **/
+body {
+  padding-bottom: 6rem; }
+
+/* =============================================================================
    Lists
    ========================================================================== */
 /***
@@ -439,10 +448,10 @@ a {
     color: inherit; }
 
 ::-moz-selection {
-  background: red; }
+  background: yellow; }
 
 ::selection {
-  background: red; }
+  background: yellow; }
 
 /* =============================================================================
    Forms
@@ -669,6 +678,50 @@ h6 {
 
 .process__block--black {
   background-color: #151515; }
+
+.post-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 6rem; }
+
+.post-heading__title {
+  font-size: 5rem;
+  margin-bottom: 0; }
+
+.post-heading__number {
+  font-size: 2.4rem;
+  color: magenta;
+  font-weight: 200; }
+
+.album-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.album-info__artwork {
+  margin-bottom: 2rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content; }
+
+.album-info__tracklist {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: gray; }
+
+.album-info__track {
+  margin: 0; }
 
 /* =============================================================================
    Menu

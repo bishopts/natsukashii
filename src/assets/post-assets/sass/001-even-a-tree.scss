@@ -1,17 +1,5 @@
 @import '../../sass/main';
 
-.p-page-heading {
-  margin-bottom: 6rem;
-}
-
-.p-page-heading::after {
-  content: '001';
-  margin-left: 2rem;
-  font-size: 2.4rem;
-  color: $magenta;
-  font-weight: $lite;
-}
-
 .p-grid {
   display: grid;
   grid-template-columns: minmax(0, 43rem) 1fr;
@@ -31,10 +19,9 @@
   }
 }
 
-.p-aside {
+.p-album-info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-end;
 
   @media (max-width: 860px) {
@@ -42,26 +29,18 @@
   }
 }
 
-.p-cover-art {
+.p-album-info__artwork {
   width: 60%;
-  margin-bottom: 2rem;
 
   @media (max-width: 860px) {
     width: 50%;
   }
 }
 
-.p-tracklist {
-  font-size: 1.3rem;
-  line-height: 1.3;
-  color: $gray-50;
+.p-album-info__tracklist {
   text-align: right;
 
   @media (max-width: 860px) {
     text-align: left;
   }
-}
-
-.p-tracklist__track {
-  margin: 0;
 }
