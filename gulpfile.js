@@ -1,36 +1,36 @@
-const gulp 				= require('gulp');
-const sass 				= require('gulp-sass');
-const prefix 			= require('gulp-autoprefixer');
-const browserSync = require('browser-sync').create();
+const gulp         = require('gulp');
+const sass         = require('gulp-sass');
+const prefix       = require('gulp-autoprefixer');
+const browserSync  = require('browser-sync').create();
 
 function css() {
-	return gulp.src('src/assets/sass/main.scss')
-		.pipe(sass().on('error', sass.logError))
-		.pipe(prefix({
-			browsers: ['last 2 versions'],
-			cascade: false
-		}))
-		.pipe(gulp.dest('src/assets/css'))
-		.pipe(browserSync.stream());
+  return gulp.src('src/assets/sass/main.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(prefix({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('src/assets/css'))
+    .pipe(browserSync.stream());
 };
 
 function cssPosts() {
-	return gulp.src('src/assets/post-assets/sass/*.scss')
-		.pipe(sass().on('error', sass.logError))
-		.pipe(prefix({
-			browsers: ['last 2 versions'],
-			cascade: false
-		}))
-		.pipe(gulp.dest('src/assets/post-assets'))
-		.pipe(browserSync.stream());
+  return gulp.src('src/assets/post-assets/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(prefix({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('src/assets/post-assets'))
+    .pipe(browserSync.stream());
 };
 
 
 
 function serve() {
-	browserSync.init({
-		server: "./src"
-	})
+  browserSync.init({
+    server: "./src"
+  })
 };
 
 exports.default = serve;
