@@ -1,20 +1,19 @@
 @import '../../sass/main';
 
-.p-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 43rem) 1fr;
+.p-flex {
+  display: flex;
 
   @media (max-width: 860px) {
-    grid-template-columns: none;
-    grid-template-rows: auto-fit 1fr;
+    flex-direction: column;
   }
 }
 
 .p-body {
+  max-width: 43rem;
+
   font-size: 1.4rem;
 
   @media (max-width: 860px) {
-    max-width: 43rem;
     margin-bottom: 1rem;
   }
 }

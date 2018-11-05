@@ -801,19 +801,22 @@ h6 {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
-.p-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 43rem) 1fr; }
+.p-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   @media (max-width: 860px) {
-    .p-grid {
-      grid-template-columns: none;
-      grid-template-rows: auto-fit 1fr; } }
+    .p-flex {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .p-body {
+  max-width: 43rem;
   font-size: 1.4rem; }
   @media (max-width: 860px) {
     .p-body {
-      max-width: 43rem;
       margin-bottom: 1rem; } }
 
 .p-album-info {
