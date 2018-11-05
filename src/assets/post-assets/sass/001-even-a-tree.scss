@@ -1,5 +1,9 @@
 @import '../../sass/main';
 
+/***
+ * Main Body Container
+ **/
+
 .p-flex {
   display: flex;
 
@@ -7,6 +11,10 @@
     flex-direction: column;
   }
 }
+
+/***
+ * Article Container
+ **/
 
 .p-body {
   max-width: 43rem;
@@ -18,9 +26,11 @@
   }
 }
 
+/***
+ * Album Component Overrides
+ **/
+
 .p-album-info {
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
 
   @media (max-width: 860px) {

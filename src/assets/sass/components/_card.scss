@@ -1,21 +1,31 @@
-/* Card Image */
+/* =============================================================================
+   Card
+   ========================================================================== */
+
+/***
+ * Card Image
+ **/
 
 .card__image {
-  margin-bottom: 1rem;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
-/* Card Body */
+/***
+ * Card Body
+ **/
 
 .card__body {
-  align-items: flex-end;
-  border-bottom: 2px solid $black;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   padding-bottom: 1rem;
+  border-bottom: 2px solid $black;
 }
 
-/* Card Title */
+/***
+ * Card Title
+ **/
 
 .card__title {
   margin-bottom: 0;
@@ -25,13 +35,17 @@
   text-transform: uppercase;
 }
 
-/* Card Icon */
+/***
+ * Card Icon
+ **/
 
 .card__icon {
   margin-left: 5px;
 }
 
-/* Card Hover Effects */
+/***
+ * Card Hover Effects
+ **/
 
 .card__image,
 .card__body {

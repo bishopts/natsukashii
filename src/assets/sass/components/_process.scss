@@ -1,5 +1,18 @@
+/* =============================================================================
+   Process Colors Design Element (Strictly Vizual)
+   ========================================================================== */
+
+/***
+ * 
+ * Process Colors Container
+ * 
+ * 1. Fixed to right side of screen
+ * 2. Becomes hidden at smaller screen sizes
+ *
+ **/
+
 .process {
-  position: fixed;
+  position: fixed; /* 1 */
   top: 130px;
   right: 0;
 
@@ -7,10 +20,18 @@
   height: 120px;
 
   @media (max-width: 1130px) {
-    display: none;
+    display: none; /* 2 */
   }
 }
 
+/***
+ *
+ * Color Block
+ *
+ * Individual blocks for each color
+ *
+ **/
+ 
 .process__block {
   width: 30px;
   height: 30px;

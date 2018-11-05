@@ -5,8 +5,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
   padding-left: 10px;
+  margin-bottom: 60px;
 
   @media (min-width: 1130px) {
       padding: 0 5%;
@@ -18,10 +18,19 @@
   }
 }
 
+/***
+ *
+ * Header Logo
+ *
+ * 1. Rule element
+ * 2. Reset default style
+ *
+ **/
+
 .header__logo {
-  border-top: 20px solid $black;    
-  margin-bottom: 0;
   padding-top: 10px;
+  border-top: 20px solid $black; /* 1 */
+  margin-bottom: 0; /* 2 */
 
   font-size: 3rem;
   font-weight: $bold;
