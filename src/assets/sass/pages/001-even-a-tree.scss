@@ -1,10 +1,8 @@
-@import '../../sass/main';
-
 /***
- * Main Body Container
+ * P001 - Main Body Container
  **/
 
-.p-flex {
+.p001-flex {
   display: flex;
 
   @media (max-width: 860px) {
@@ -13,10 +11,10 @@
 }
 
 /***
- * Article Container
+ * P001 - Article Container
  **/
 
-.p-body {
+.p001-body {
   max-width: 43rem;
 
   font-size: 1.4rem;
@@ -27,10 +25,10 @@
 }
 
 /***
- * Album Component Overrides
+ * P001 - Album Component Overrides
  **/
 
-.p-album-info {
+.p001-album-info {
   align-items: flex-end;
 
   @media (max-width: 860px) {
@@ -38,7 +36,7 @@
   }
 }
 
-.p-album-info__artwork {
+.p001-album-info__artwork {
   width: 60%;
 
   @media (max-width: 860px) {
@@ -46,7 +44,7 @@
   }
 }
 
-.p-album-info__tracklist {
+.p001-album-info__tracklist {
   text-align: right;
 
   @media (max-width: 860px) {

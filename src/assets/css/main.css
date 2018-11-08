@@ -873,3 +873,52 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 20px; }
+
+/***
+ * P001 - Main Body Container
+ **/
+.p001-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 860px) {
+    .p001-flex {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+/***
+ * P001 - Article Container
+ **/
+.p001-body {
+  max-width: 43rem;
+  font-size: 1.4rem; }
+  @media (max-width: 860px) {
+    .p001-body {
+      margin-bottom: 1rem; } }
+
+/***
+ * P001 - Album Component Overrides
+ **/
+.p001-album-info {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  @media (max-width: 860px) {
+    .p001-album-info {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; } }
+
+.p001-album-info__artwork {
+  width: 60%; }
+  @media (max-width: 860px) {
+    .p001-album-info__artwork {
+      width: 50%; } }
+
+.p001-album-info__tracklist {
+  text-align: right; }
+  @media (max-width: 860px) {
+    .p001-album-info__tracklist {
+      text-align: left; } }
